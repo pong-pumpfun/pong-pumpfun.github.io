@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+body {
+    background-color: black !important;
+    font-family: "Pixelify Sans", sans-serif !important;
+}
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin: 10px;
+    font-family: "Pixelify Sans", sans-serif;
+    z-index: 100;
+}
+
+.social-links {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    z-index: 100;
+}
+
+.social-links img {
+    height: 30px;
+    margin-left: 20px;
+}
+
+.first-screen {
+    z-index: 10;
+    /* height: 100vh; */
+    /* width: 100%; */
+    background-color: black;
+    color: white;
+    padding: 50px;
+}
+
+.first-screen .alert-container {
+    height: 20vh;
+}
+
+.first-screen .alert-container img {
+    height: 100%;
+}
+
+.first-screen .alert-text {
+    font-size: 2em;
+    text-align: center;
+    /* height: 100%; */
+    border: 3px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.first-screen .question-text {
+    font-size: 2em;
+}
+
+.buttons-container .yes-button,
+.buttons-container .no-button {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 1.5em;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.buttons-container .yes-button {
+    color: green;
+}
+
+.buttons-container .no-button {
+    color: red
+}
+
+.top-section {
+    visibility: collapse;
+    z-index: 20;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.top-section .ascii-art img {
+    height: 50vh;
+}
+
+.top-section .broke-jeet {
+    border: 3px solid white;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 600px) {
+    .title {
+        font-size: 2em;
+    }
+
+    .social-links img {
+        height: 20px;
+        margin-left: 10px;
+    }
+
+    .first-screen .question-text {
+        font-size: 1.5em;
+    }
+
+    .first-screen .alert-text {
+        font-size: 1.5em;
+    }
+
+    .top-section .ascii-art img {
+        height: 30vh;
+    }
+}
